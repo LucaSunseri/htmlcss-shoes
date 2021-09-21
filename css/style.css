@@ -9,15 +9,28 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Rubik Mono One', sans-serif;;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /**********HEADER**********/
 header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 500;
 }
 
 /**********MAIN**********/
 .box {
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -32,4 +45,20 @@ main div.box:nth-child(2) {
 
 main div.box:nth-child(3) {
   background-color: yellow;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200%;
+  color: yellow;
+}
+
+main div.box:nth-child(3) h1 {
+  color: green;
 }

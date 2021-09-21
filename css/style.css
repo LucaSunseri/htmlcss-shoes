@@ -23,9 +23,33 @@ body {
 /**********HEADER**********/
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10px;
+  right: 50px;
   z-index: 500;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+}
+
+a:hover {
+  color: blue;
 }
 
 /**********MAIN**********/
